@@ -9,53 +9,35 @@
   <link rel="stylesheet" href="./index.js">
 </head>
 <body>
-  <!-- <div> -->
+  <h1>Even Odd Lists</h1>
+  <hr/> 
 
-
-    <!-- ~~~~ Come Back to Textbook Later 3/1/2022 ~~~~~~ -->
-    
-    <h1>Even Odd Lists</h1>
-    <hr/> 
-
-    <form id="even-odd-form" autocomplete="off" target="_blank">
-      <div> 
-        <label for="word">word</label> 
-        <input type="text" name="word" id="word"  placeholder="what's your word?" onkeyup=""> 
-      </div>
-      <div>
-        <input type="button" value="Even or Odd?" onclick="">
-      </div>
-    </form>
-  <!-- </div> -->
-  <!-- <div> -->
-    <section>
-      <h2>Even</h2>
-      <ul></ul>
-    </section>
-    <section>
-      <h2>Odd</h2>
-      <ul></ul>
-    </section>
-  <!-- </div> -->
-  <!-- <div> -->
-    <!-- <script>
-      let usersWord = ""
-  
-      function updateWord(element) {
-        usersWord = element.value
-  
-        console.log(usersWord)
-      }
-    </script> -->
-  <!-- </div> -->
-  <!-- <input type="text" name="word" id="word"  placeholder="what's your word?" onkeyup="updateWord(this)"> 
+  <form id="even-odd-form" autocomplete="off" target="_blank">
+    <div> 
+      <label for="word">word</label> 
+      <input type="text" name="word" id="word"  placeholder="what's your word?" onkeyup="updateWord(this)"> 
+    </div>
+    <div>
+      <input type="button" value="Even or Odd?" onclick="">
+    </div>
+  </form>
   <section>
     <h2>Even</h2>
-    <ul id="even"></ul>
+    <ul></ul>
   </section>
   <section>
     <h2>Odd</h2>
-    <ul id="odd"></ul>
+    <ul></ul>
   </section>
-</body> -->
+  <script>
+    let usersWord = ""
+    let oddList = document.getElementById("odd")
+    function updateWord(element) {
+      usersWord = element.value
+
+      console.log(usersWord)
+    }
+  </script>
+
+</body>
 </html>
